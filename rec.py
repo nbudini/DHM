@@ -86,7 +86,7 @@ img_rec = np.fft.ifftshift(img_rec)
 mod_rec = np.abs(img_rec); # modulus
 fase_rec = np.angle(img_rec) # wrapped phase
 
-# amplitud and phase plots
+# amplitude and phase plots
 fig, ax = plt.subplots(1,2,tight_layout=True)
 ax[0].imshow(mod_rec,cmap=mpl.colormaps['turbo'])
 ax[0].axis("off")
